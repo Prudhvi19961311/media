@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>media</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="prudhvi">
+        <meta name="description" content="media elements">
+        <meta name="keywords" content="media,elements">
+    </head>
+    <body>
+        <!--audio tag is used to insert audio files in the HTML document-->
+        <!--supported audio formats are mp3, wav, ogg-->
+        <!--audio tag will support multiple source tags-->
+        <!--text with in the audio tag is not displayed untill source tag cannot find any file or browser is unable to suppor the audio format-->
+        <!--with audio tag "controls" atribute is to be used by default-->
+        <h1>this is audio</h1>
+        <audio controls>
+            <source src="audio/Tujhe Kitna Chahne Lage - Kabir Singh.mp3" type="audio/mpeg">
+            <source src="audio/Tujhe Kitna Chahne Lage - Kabir Singh.ogg" type="audio/mpeg">
+            Your browser cannot play the audio!!!
+    
+        </audio>
+        <br>
+        <!--video tag is used to insert video files in the HTML document-->
+        <!--supported video formats are mp4, webM, ogg-->
+        <!--video tag will support multiple source tags-->
+        <!--text with in the video tag is not displayed untill source tag cannot find any file or browser is unable to suppor the video format-->
+        <!--with video tag "controls" atribute is to be used by default-->
+        <h1>this is video</h1>
+        <video controls >
+            <source src="video/22m_1625828289_345857.mp4" type="video/mp4">
+            <!--track is used for embedding subtitles for the respective video element-->
+            <!--supported format for tracks is .vtt-->
+            <track src="video/Black.Widow.2021.720p.DSNP.WEB-DL.x264-Tinymkv.xyz.vtt" kind="captions" srclang="en" label="English" default>
+        </video>
+    </body>
+</html>
